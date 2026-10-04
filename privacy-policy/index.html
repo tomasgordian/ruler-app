@@ -9,6 +9,8 @@
   main { max-width: 760px; margin: 0 auto; padding: 48px 20px; line-height: 1.6; }
   h1 { margin-bottom: 4px; }
   h2 { margin-top: 32px; }
+  h3 { margin-top: 24px; }
+  li { margin-bottom: 8px; }
   a { color: #58a6ff; }
   .updated { color: #8b949e; }
 </style>
@@ -16,28 +18,57 @@
 <body>
 <main>
   <p><a href="../">&larr; Back</a></p>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 4, 2026</p>
+  <h1>Privacy Policy for Ruler</h1>
+  <p class="updated">Effective date: 4 October 2026</p>
 
-  <p>This Privacy Policy describes how Ruler App ("the app") handles information. The app is developed by Tomas Gordian.</p>
+  <p>Ruler is an Android app that draws a measuring ruler and an optional magnifier on top of other apps. This policy explains what data the app handles and why.</p>
 
-  <h2>Information we collect</h2>
-  <p>The app does not collect, store, transmit or share any personal information. All functionality runs locally on your device.</p>
+  <h2>Who is responsible</h2>
+  <p>[Your full name or business name], [postal address or country]<br>
+  Contact: <a href="mailto:gordian.dev@gmail.com">gordian.dev@gmail.com</a></p>
 
-  <h2>Third-party services</h2>
-  <p>The app does not use analytics, advertising or any other third-party services that collect data.</p>
+  <h2>What stays on your device</h2>
+  <ul>
+    <li><strong>Screen capture.</strong> The magnifier uses Android's screen capture (MediaProjection) after you give consent. Captured frames are processed in memory to show the magnified view. They are never saved, uploaded or shared. Capture stops when you turn the magnifier off, lock the device, or close the app.</li>
+    <li><strong>Display over other apps.</strong> The app asks for this permission only to draw the ruler and magnifier. It does not read what is shown in other apps.</li>
+  </ul>
 
-  <h2>Permissions</h2>
-  <p>The app does not require any permissions that give it access to your personal data.</p>
+  <h2>What is sent to us</h2>
+  <p>The app uses Google's Firebase services. They are the only place the app sends data.</p>
 
-  <h2>Children's privacy</h2>
-  <p>The app does not knowingly collect any information from anyone, including children under 13.</p>
+  <h3>Crash reports (Firebase Crashlytics)</h3>
+  <p>Collected when the app crashes or logs an error: stack traces, the app's recent log messages, device model, Android version, app version, the state of the app at the time (for example whether the magnifier was running) and a Firebase installation ID.<br>
+  Purpose: finding and fixing crashes. Legal basis: our legitimate interest in a stable app (GDPR Art. 6(1)(f)). You can turn this off at any time in Settings &rarr; "Send crash reports".</p>
 
-  <h2>Changes to this policy</h2>
-  <p>This policy may be updated from time to time. Changes will be posted on this page with a new "Last updated" date.</p>
+  <h3>Usage analytics (Firebase Analytics)</h3>
+  <p>Collected when you use the app: which features are used and how (for example session length, rotating the ruler, resizing the ruler, opening settings, turning the magnifier on or off and its zoom level), the outcome of permission and setup prompts (overlay and notification permission, quick tile suggestion), whether notifications are enabled, your app settings (measurement unit, colour, guidelines, snap to grid, magnifier on start, quick tile added), device model, Android version, language, approximate location derived from your IP address (country or region) and a randomly generated app-instance ID.<br>
+  Purpose: understanding how the app is used so we can improve it. Legal basis: your consent (GDPR Art. 6(1)(a)), which you can withdraw at any time in Settings &rarr; "Share usage data". Turning it off stops further collection.</p>
 
-  <h2>Contact</h2>
-  <p>If you have any questions, contact <a href="mailto:gordian.dev@gmail.com">gordian.dev@gmail.com</a>.</p>
+  <p>We do not use the advertising ID, show ads, or collect your name, email address, contacts, photos, location from GPS or the content of your screen.</p>
+
+  <h2>Purchases</h2>
+  <p>If paid features are added, purchases are handled by Google Play Billing. We receive only a purchase token and order ID, never your payment details.</p>
+
+  <h2>Feedback emails</h2>
+  <p>If you use "Send feedback", the app opens your email app with a draft containing the app version, Android version, device model and screen size. Nothing is sent until you send the email. We use what you send only to reply to you and to improve the app.</p>
+
+  <h2>Retention</h2>
+  <p>Analytics data is kept for up to 14 months and crash data for up to 90 days, after which Google deletes it. Feedback emails are kept as long as needed to handle your message.</p>
+
+  <h2>Sharing and transfers</h2>
+  <p>Data is processed by Google (Firebase) on our behalf. Google may process it in countries outside the EU/EEA, including the United States, under safeguards such as the EU-US Data Privacy Framework and Standard Contractual Clauses. We do not sell your data. We do not share it with anyone else, except where the law requires it, for example to comply with a legal process or a government request. See Google's privacy information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+
+  <h2>Security</h2>
+  <p>Data is sent to Google over encrypted connections, and access to our Firebase projects is restricted to the developer.</p>
+
+  <h2>Your rights</h2>
+  <p>Under the GDPR you can ask us for access to, correction or deletion of your data, restrict or object to processing (including crash reports), and withdraw consent at any time. Because the data is tied to a random installation ID and not your identity, we may need you to provide it to find your data. Contact <a href="mailto:gordian.dev@gmail.com">gordian.dev@gmail.com</a>. You can also complain to your local data protection authority.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children under 13 and we do not knowingly collect data from them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we will update this page and the effective date.</p>
 </main>
 </body>
 </html>
