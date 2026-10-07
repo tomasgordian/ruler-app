@@ -1,0 +1,6 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: #0d1117; color: #e6edf3; }
+footer { width: 100%; box-sizing: border-box; max-width: 840px; margin: 0 auto; padding: 24px 20px; border-top: 1px solid #30363d; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; color: #8b949e; font-size: 0.9rem; }
+footer a { color: #58a6ff; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+footer nav { display: flex; gap: 24px; }
+@media (max-width: 640px) { footer { flex-direction: column; align-items: center; text-align: center; } }
