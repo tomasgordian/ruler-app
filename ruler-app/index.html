@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruler</title>
+<meta name="description" content="Measure anything on your Android screen in dp, px and sp, down to a single pixel. Zoom in with the built-in magnifier to place the ruler exactly where you want it. Made for developers, testers and designers.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="../style.css">
+<style>
+  main { flex: 1; width: 100%; box-sizing: border-box; max-width: 960px; margin: 0 auto; padding: 72px 20px; display: flex; align-items: flex-start; justify-content: center; }
+  .hero { display: flex; align-items: center; gap: 48px; }
+  .icon { flex: none; width: 360px; height: 360px; -webkit-user-drag: none; user-select: none; }
+  .hero > div { max-width: 460px; }
+  h1 { font-size: 3rem; margin: 0 0 8px; }
+  p { font-size: 1.1rem; line-height: 1.6; color: #8b949e; }
+  .button { display: inline-block; margin: 24px 6px 0; padding: 12px 24px; background: #238636; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
+  .button:hover { background: #2ea043; }
+  .play { display: inline-flex; align-items: center; gap: 10px; margin: 24px 0 0; padding: 8px 20px 8px 14px; background: #000; color: #fff; text-decoration: none; border: 1px solid #a6a6a6; border-radius: 10px; text-align: left; vertical-align: top; }
+  .play:hover { background: #1a1a1a; }
+  .play svg { width: 28px; height: 30px; }
+  .play small { display: block; font-size: 0.65rem; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.1; }
+  .play strong { display: block; font-size: 1.35rem; font-weight: 500; line-height: 1.1; }
+  @media (max-width: 640px) { .hero { flex-direction: column; gap: 24px; text-align: center; } .icon { width: 180px; height: 180px; } .hero > div { max-width: none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+  <img class="icon" draggable="false" src="icon.svg" alt="Ruler icon" width="360" height="360">
+  <div>
+  <h1>Ruler</h1>
+  <p>Measure anything on your Android screen in dp, px and sp, down to a single pixel. Zoom in with the built-in magnifier to place the ruler exactly where you want it. Made for developers, testers and designers.</p>
+  <a class="play" href="https://play.google.com/store/apps/details?id=com.gordian.ruler">
+    <svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#00A0FF" d="M2 1L14 13L2 25Z"/><path fill="#00E676" d="M2 1L18 10.6L14 13Z"/><path fill="#FF3D00" d="M2 25L18 15.4L14 13Z"/><path fill="#FFD600" d="M18 10.6L22 13L18 15.4L14 13Z"/></svg>
+    <span><small>Get it on</small><strong>Google Play</strong></span>
+  </a>
+  </div>
+  </div>
+</main>
+<footer>
+  <span>&copy; 2026 Tomas Gordian</span>
+  <nav><a href="privacy-policy/">Privacy Policy</a><a href="mailto:gordian.dev@gmail.com">gordian.dev@gmail.com</a></nav>
+</footer>
+</body>
+</html>
