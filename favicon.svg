@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.2 -0.1 6.6 6.6" width="1024" height="1024" fill="none" stroke="#ffffff">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.2 -0.1 6.6 6.6" width="1024" height="1024" fill="none" stroke="#000000">
+  <style>@media (prefers-color-scheme: dark) { svg { stroke: #ffffff; } }</style>
   <path d="M4.50532,5.86316l1.26038,-1.26038l-4.11595,-4.11595l-1.26038,1.26038z" stroke-width="0.424175"/>
   <path d="M4.04196,5.12588L4.61855,4.54929" stroke-width="0.396875"/>
   <path d="M2.58002,3.66394L3.15661,3.08735" stroke-width="0.396875"/>

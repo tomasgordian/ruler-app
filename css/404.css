@@ -1,0 +1,6 @@
+main { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 20px; width: 100%; max-width: 1280px; margin: 0 auto; padding: 96px var(--pad); }
+.kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; margin-right: -0.18em; text-transform: uppercase; color: var(--accent); }
+h1 { margin: 0; font-size: clamp(44px, 6vw, 68px); line-height: 0.98; font-weight: 800; letter-spacing: -0.03em; }
+p { margin: 0; max-width: 470px; font-size: 18px; line-height: 1.55; color: var(--text-2); }
+.home { margin-top: 8px; padding: 12px 22px; border-radius: 10px; background: var(--accent); color: #fff; font-weight: 600; }
+.home:hover { background: var(--accent-hover); color: #fff; }
