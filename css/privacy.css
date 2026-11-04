@@ -1,0 +1,9 @@
+main { flex: 1; width: 100%; max-width: 760px; margin: 0 auto; padding: 48px 20px 72px; line-height: 1.6; color: var(--text-2); }
+h1 { margin: 24px 0 4px; color: var(--text); font-size: clamp(32px, 5vw, 44px); line-height: 1.05; font-weight: 800; letter-spacing: -0.02em; }
+h2 { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--text); font-size: 22px; }
+h3 { margin-top: 24px; color: var(--text); font-size: 17px; }
+strong { color: var(--text); }
+li { margin-bottom: 8px; }
+main a { color: var(--accent-hover); }
+main a:hover { color: var(--text); }
+.updated { color: var(--text-3); }

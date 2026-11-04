@@ -1,46 +1,87 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ruler</title>
-<meta name="description" content="Measure anything on your Android screen in dp, px and sp, down to a single pixel. Zoom in with the built-in magnifier to place the ruler exactly where you want it. Made for developers, testers and designers.">
+<title>Ruler — measure anything on your Android screen</title>
+<meta name="description" content="A ruler that floats over any Android app. Measure in dp, px and sp, down to a single pixel, with a built-in magnifier. Made for developers, testers and designers.">
+<meta name="theme-color" content="#0d0c0c">
+<meta property="og:title" content="Ruler — measure anything on your Android screen">
+<meta property="og:description" content="A ruler that floats over any Android app. Measure in dp, px and sp, down to a single pixel.">
+<meta property="og:url" content="https://ruler.tomasgordian.com/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="style.css">
-<style>
-  main { flex: 1; width: 100%; box-sizing: border-box; max-width: 960px; margin: 0 auto; padding: 72px 20px; display: flex; align-items: flex-start; justify-content: center; }
-  .hero { display: flex; align-items: center; gap: 48px; }
-  .icon { flex: none; width: 280px; height: 280px; -webkit-user-drag: none; user-select: none; }
-  .hero > div { max-width: 460px; }
-  h1 { font-size: 3rem; margin: 0 0 8px; }
-  p { font-size: 1.1rem; line-height: 1.6; color: #8b949e; }
-  .button { display: inline-block; margin: 24px 6px 0; padding: 12px 24px; background: #238636; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
-  .button:hover { background: #2ea043; }
-  .play { display: inline-flex; align-items: center; gap: 10px; margin: 8px 0 0; padding: 8px 20px 8px 14px; background: #000; color: #fff; text-decoration: none; border: 1px solid #a6a6a6; border-radius: 10px; text-align: left; vertical-align: top; }
-  .play:hover { background: #1a1a1a; }
-  .play svg { width: 28px; height: 30px; }
-  .play small { display: block; font-size: 0.65rem; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.1; }
-  .play strong { display: block; font-size: 1.35rem; font-weight: 500; line-height: 1.1; }
-  @media (max-width: 640px) { .hero { flex-direction: column; gap: 24px; text-align: center; } .icon { width: 180px; height: 180px; } .hero > div { max-width: none; } }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<script src="js/gallery.js" defer></script>
 </head>
+
 <body>
-<main>
-  <div class="hero">
-  <img class="icon" draggable="false" src="icon.svg" alt="Ruler icon" width="280" height="280">
-  <div>
-  <h1>Ruler</h1>
-  <p>Measure anything on your Android screen in dp, px and sp, down to a single pixel. Zoom in with the built-in magnifier to place the ruler exactly where you want it. Made for developers, testers and designers.</p>
-  <a class="play" href="https://play.google.com/store/apps/details?id=com.gordian.ruler">
-    <svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#00A0FF" d="M2 1L14 13L2 25Z"/><path fill="#00E676" d="M2 1L18 10.6L14 13Z"/><path fill="#FF3D00" d="M2 25L18 15.4L14 13Z"/><path fill="#FFD600" d="M18 10.6L22 13L18 15.4L14 13Z"/></svg>
-    <span><small>Get it on</small><strong>Google Play</strong></span>
-  </a>
-  </div>
-  </div>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.svg" alt="" width="32" height="32">Ruler</a></header>
+
+<main style="overflow-x: clip;">
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="kicker">Android screen ruler</div>
+      <h1>Measure anything on your screen.</h1>
+      <p class="lede">A ruler that floats over any app, so you can check margins, padding, icon sizes and alignment right where they are. Read it in dp, px or sp, and zoom in to place each edge on an exact pixel. Made for developers, testers and designers.</p>
+      <div class="cta">
+        <a class="play" href="https://play.google.com/store/apps/details?id=com.gordian.ruler">
+          <svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#00A0FF" d="M2 1L14 13L2 25Z"/><path fill="#00E676" d="M2 1L18 10.6L14 13Z"/><path fill="#FF3D00" d="M2 25L18 15.4L14 13Z"/><path fill="#FFD600" d="M18 10.6L22 13L18 15.4L14 13Z"/></svg>
+          <span><small>Get it on</small><strong>Google Play</strong></span>
+        </a>
+        <span class="note">Free, no ads, no account. Captured frames never leave your device.</span>
+      </div>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <div class="phone left"><img src="screenshots/custom-color-dark.webp" alt="" width="800" height="1785"></div>
+      <div class="phone mid"><img src="screenshots/measure-width.webp" alt="" width="800" height="1785" fetchpriority="high"></div>
+      <div class="phone right"><img src="screenshots/settings.webp" alt="" width="800" height="1785"></div>
+    </div>
+  </section>
+
+  <section class="features" id="features" aria-label="Features">
+    <ul class="grid">
+      <li class="feature"><div class="num">01</div><h3>Width or height</h3><p>Measure across with the horizontal ruler or down with the vertical one, and switch with one tap. It works in portrait and landscape, and guidelines run across the screen to line up distant edges.</p></li>
+      <li class="feature"><div class="num">02</div><h3>A magnifier that sees under the ruler</h3><p>Zoom in on the screen beneath the edge you're moving until you see individual pixels. Nudge the edge one unit at a time and watch exactly where it lands. Switch edges with one tap.</p></li>
+      <li class="feature"><div class="num">03</div><h3>dp, px and sp</h3><p>sp follows your font-size setting, so text measures the way Android draws it. Snap to the 4 dp grid to check spacing.</p></li>
+      <li class="feature"><div class="num">04</div><h3>Type an exact size</h3><p>Enter a value, like 375 dp, and the ruler resizes to match.</p></li>
+      <li class="feature"><div class="num">05</div><h3>Any colour you like</h3><p>Red, green, blue, or any colour you pick, so the ruler stands out on light and dark apps.</p></li>
+      <li class="feature"><div class="num">06</div><h3>Works over any app</h3><p>The ruler floats on top and the app underneath stays usable. Tuck it into a bubble at the screen edge, or drag it onto × to close. Add the Quick Settings tile to turn it on from any app without opening Ruler.</p></li>
+    </ul>
+  </section>
+
+  <section class="shots" id="screenshots">
+    <div class="shots-inner">
+      <h2>See it in use</h2>
+      <ul class="shot-row">
+        <li class="frame"><button type="button" class="shot"><img src="screenshots/measure-width.webp" alt="Horizontal ruler measuring a Send Biscuit button at 128 dp, magnifier zoomed to 17× on its left edge" width="800" height="1785" loading="lazy"></button></li>
+        <li class="frame"><button type="button" class="shot"><img src="screenshots/measure-height.webp" alt="Vertical ruler measuring a Send Biscuit button at 120 px, magnifier zoomed to 17× on its top edge" width="800" height="1785" loading="lazy"></button></li>
+        <li class="frame"><button type="button" class="shot"><img src="screenshots/settings.webp" alt="Settings panel with units, grid snap, guidelines, magnifier and colour options" width="800" height="1785" loading="lazy"></button></li>
+        <li class="frame"><button type="button" class="shot"><img src="screenshots/size-editor.webp" alt="Size editor with 375 dp typed in and the number keyboard open" width="800" height="1785" loading="lazy"></button></li>
+        <li class="frame"><button type="button" class="shot"><img src="screenshots/custom-color-dark.webp" alt="Teal ruler measuring a 104 dp avatar in a dark-themed app" width="800" height="1785" loading="lazy"></button></li>
+        <li class="frame"><button type="button" class="shot"><img src="screenshots/out-of-the-way.webp" alt="Ruler collapsed into a bubble at the screen edge, with the close target shown at the bottom" width="800" height="1785" loading="lazy"></button></li>
+      </ul>
+    </div>
+  </section>
 </main>
+
+<dialog class="viewer" aria-label="Screenshots" tabindex="-1">
+  <img class="viewer-img" alt="">
+  <button type="button" class="viewer-prev" aria-label="Previous screenshot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <button type="button" class="viewer-next" aria-label="Next screenshot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+  <button type="button" class="viewer-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <p class="viewer-count" aria-live="polite"></p>
+</dialog>
+
 <footer>
   <span>&copy; 2026 <a href="https://tomasgordian.com">Tomas Gordian</a></span>
   <nav><a href="privacy-policy/">Privacy Policy</a><a href="mailto:gordian.dev@gmail.com">gordian.dev@gmail.com</a></nav>
 </footer>
+
 </body>
 </html>
